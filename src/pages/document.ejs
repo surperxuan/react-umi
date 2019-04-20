@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <script type="text/javascript">
+    ! function (designWidth) {
+      if (/Android(?:\s+|\/)(\d+\.\d+)?/.test(navigator.userAgent)) {
+        var version = parseFloat(RegExp.$1);
+        if (version > 2.3) {
+          var phoneScale = parseInt(window.screen.width) / designWidth;
+          document.write('<meta name="viewport" content="width=' + designWidth + ',minimum-scale=' + phoneScale +
+            ',maximum-scale=' + phoneScale + ', target-densitydpi=device-dpi">');
+        } else {
+          document.write('<meta name="viewport" content="width=' + designWidth + ',target-densitydpi=device-dpi">');
+        }
+      } else {
+        document.write('<meta name="viewport" content="width=' + designWidth +
+          ',user-scalable=no,target-densitydpi=device-dpi,minimal-ui,viewport-fit=cover">');
+      }
+    }(640);
+
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>

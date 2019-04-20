@@ -1,8 +1,85 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+h1,h2,h3,h4,h5,h6,em,i {
+    font-weight: 100;
+    font-style: normal
+}
+ul,ol,li {
+    list-style-type: none
+}
+a {
+    color: #666;
+    text-decoration: none;
+    outline: 0
+}
+a:hover {
+    text-decoration: none
+}
 
 html, body, #root {
-  height: 100%;
+    height: 100%;
+    font-size:1.5rem;
+  }
+.Hstart{
+    float:left;margin:0.5rem;
+}  
+.hgrp{
+    background:rgb(78, 78, 223);height:3rem;width:100%;
+}
+.F-weather{
+    display:flex;overflow:auto;
+}
+.F-back{
+    background:rgb(78, 78, 223);
+}
+.ddl{
+    margin:0.3rem;
 }
 
-body {
-  margin: 0;
+.search{
+    width:100%;height:3rem;background:blue;
 }
+.txt{
+    width:85%;background:rgb(37, 40, 185);display:inline-block;height:100%;border:1;padding:0;margin:0;outline:none;float:left;
+}
+.go-search{ width:15%;height:100%;font-size:2rem;border:0;padding:0;margin:0;float:left;}
+.main-1{
+    display:block;width:50%;height:50%;border:0.01rem solid black;
+float:left;background:url("/004.jpg") 6% 8%;background-size:226% 226%;}
+.main-2{
+    display:block;width:50%;height:50%;border:0.01rem solid black;
+float:left;background:url("/004.jpg") 94% 8%;background-size:226% 226%;}
+.main-3{
+    display:block;width:50%;height:50%;border:0.01rem solid black;
+float:left;background:url("/004.jpg") 6% 92%;background-size:226% 226%;}
+.main-4{
+    display:block;width:50%;height:50%;border:0.01rem solid black;
+float:left;background:url("/004.jpg") 94% 92%;background-size:226% 226%;}
+.T-main{
+    height:100%;
+}
+.movie{
+    width:100%;
+}
+.movie img{
+    width:100%;
+}
+
